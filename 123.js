@@ -64,3 +64,13 @@
 //   // Change code above this line
 // };
 
+
+
+// function urlGenerator(domain) {
+//   return function (url) {
+//     return `https://${url}.${domain}`
+//   }
+// }
+
+// const comeUrl = urlGenerator('com');
+// console.log(comeUrl("Google"));
