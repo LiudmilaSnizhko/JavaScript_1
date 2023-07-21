@@ -374,7 +374,7 @@
 // }
 
 // function makeMessage(callback) {
-//   console.log(`Ви замовили ${callback()}`);  
+//   console.log(`Ви замовили ${callback()}`);
 // }
 // makeMessage(car.getData.bind(car));
 
@@ -399,6 +399,14 @@
 // fuji.color = 'pink';
 // console.log(fuji.type);
 // console.log(apples.hasOwnProperty('vitamins'));
+
+const ourArray = [];
+let s = 0;
+while (i < 5) {
+    ourArray.push(i);
+    i++;
+}
+
 
 
 
