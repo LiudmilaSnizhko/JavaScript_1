@@ -400,12 +400,15 @@
 // console.log(fuji.type);
 // console.log(apples.hasOwnProperty('vitamins'));
 
+
+
 // const ourArray = [];
-// let s = 0;
-// while (i < 5) {
+// let i = 4;
+// while (i > 0) {
 //     ourArray.push(i);
-//     i++;
+//     i--;
 // }
+// console.log(ourArray);
 
 
 
