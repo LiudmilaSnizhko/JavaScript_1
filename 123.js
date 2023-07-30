@@ -411,9 +411,176 @@
 // console.log(ourArray);
 
 
+// Практика 30.07.2023 р.
+
+
+// Task-01
+// При натисканні на кнопку "SHOW ME", потрібно за допомогою alert
+// вивести значення, яке будемо вводити в інпут.
 
 
 
+// Task-02
+// При натисканні на кнопку "Приховати" потрібно введені користувачем
+// символи в інпут відображати у вигляді крапок замість звичайного
+// тексту, а також змінити назву кнопки на "Показати", при повторному
+// натисканні знову будемо відображати символи, а назва кнопки зміниться
+// на "Приховати".
+
+// const button = document.querySelector('#passwordButton');
+// const input = document.querySelector('#passwordInput');
+// button.addEventListener(click, foo);
+// function foo() {
+//     if (input.type === 'text') {
+//         button.textContent = 'Показати';
+//         input.type = 'password';
+//     } else
+//     {button.textContent = 'Приховати';
+//         input.type = 'text';
+        
+//         }
+        
+// }
+
+// Vlad
+
+// const button = document.querySelector('#passwordButton')
+// const input = document.querySelector('#passwordInput')
+// button.addEventListener('click', foo)
+// function foo () {
+//   if(input.type === 'text'){
+//     button.textContent = "Показати";
+//     input.type = 'password';
+//   }else {
+//     button.textContent = "Приховати";
+//     input.type = 'text';
+//   }
+// }
+
+
+
+// Task-03
+// Кнопка "Зменшити" повинна зменшувати квадрат на 10 пікселів.
+// Кнопка "Збільшити" повинна збільшувати квадрат на 10 пікселів.
+// const buttonDecrease = document.querySelector('#decrease');
+// const buttonIncrease = document.querySelector('#increase');
+// const box = document.querySelector('#box');
+// buttonDecrease.addEventListener('click', onClick);
+// buttonIncrease.addEventListener('click', onClick);
+
+// function onClick(evt) {
+//     const id = evt.currenTarget.id;
+//     const width = box.box.offsetWidth;
+//     const height = box.box.offsetHeight;
+
+//     if (id === 'increase') {
+//         box.style.width = `${width + 10}px`
+//          box.style.width = `${height+10}px`
+        
+//     } else {
+//         box.style.width = `${width - 10}px`
+//          box.style.width = `${height-10}px`
+//     }
+// }
+
+
+
+// Task-04
+
+// При натисканні на кнопку "SWAP ME" зробити так, щоб значення двох інпутів
+// мінялися місцями. Тобто значення правого інпуту стало на місце лівого і навпаки.
+
+// const swapButton = document.getElementById('swapButton');
+// const leftSwapInput = document.getElementById('leftSwapInput')
+// const rightSwapInput = document.getElementById('rightSwapInput')
+// swapButton.addEventListener('click', onClick);
+// function onClick() {
+//     const firstValue = leftSwapInput.value
+//     leftSwapInput.value = rightSwapInput.value
+//     rightSwapInput.value = firstValue
+// }
+
+
+
+
+// Task-05
+// При кліку на кнопку "Подвоїти" збільшувати значення в кожному
+// елементі списку в два рази.
+
+// const listEl = document.querySelectorAll('.listItem');
+// const doubleEl = document.querySelector('#double');
+
+// doubleEl.addEventListener('click', onClick);
+
+// function onClick() {
+//     listEl.forEach(el => el.textContent=el.textContent*2)
+// }
+
+
+
+
+
+// Task-06
+// При кліку на кнопку "Filter" потрібно видалити з списку позначені елементи.
+// const checkboxEl = document.querySelector('.checkboxForm')
+// const checkboxWrapperEl = document.querySelectorAll('.checkboxWrapper')
+
+
+
+// checkboxEl.addEventListener('submit', onChange)
+
+// function onChange(evt) {
+//     evt.preventDefault()
+//     const ArrFilter = [...checkboxWrapperEl].filter(el=>el.lastChild.checked)
+
+// ArrFilter.forEach(el=>el.firstChild.checked)
+// }
+
+
+
+
+// Task-07
+// Наведено список людей. Зроби можливість сортування списку за ім'ям та за прізвищем.
+// const sortByNameButton = document.querySelector('#sortByNameButton')
+// const sortByLastNameButton = document.querySelector('#sortByLastNameButton')
+
+// const people = document.querySelector('.person');
+// const list = document.querySelector('.people');
+
+// sortByNameButton.addEventListener('click', onByNameClick)
+
+// function onByNameClick(evt){
+//     const arr = [...sortByNameButton].sort((a,b) => a.textContent.localeCompare(b.textContent))
+//     list.innerHTML = "";
+//     list.append(...arr)
+// }
+// sortByLastNameButton.addEventListener('click', onByLastNameClick)
+// function onByLastNameClick(){
+// const arr = [...people].sort((a,b)=> {
+//     const firstValue = a.textContent.split(' ')[1].toLowerCase();
+//     const secondtValue = b.textContent.split(' ')[1].toLowerCase();
+//     return firstValue.localeCompare(secondtValue);
+
+// });
+// list.innerHTML = "";
+//     list.append(...arr);
+// }
+
+
+// Task-08
+
+// Наведено список людей. Зроби можливість фільтрації (пошуку) за ім'ям або за прізвищем.
+// const contactsFilter = document.querySelector('.contactsFilter')
+// const contacts = document.querySelector('.contacts')
+// const contactAll = document.querySelectorAll('.contact')
+
+// contactsFilter.addEventListener('input', onInput)
+// function onInput(evt) {
+// const inputValue = evt.currentTarget.value;
+// const filterRes = [...contactAll].filter(elem => elem.textContent.toLowerCase().includes(inputValue));
+// contacts.innerHTML = '';
+// contacts.append(...filterRes)
+// }
 
 
 
